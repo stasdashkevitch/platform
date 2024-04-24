@@ -1,8 +1,7 @@
-import { render } from "react-dom"
+import { createRoot } from 'react-dom/client'
 import { Button } from "./components/Buttons"
 
-render(
-  <Button/>,
-  document.getElementById('root')
-)
+const container = document.querySelector('#root') as HTMLElement
+const root = createRoot(container)
+root.render(<Button/>);
 
