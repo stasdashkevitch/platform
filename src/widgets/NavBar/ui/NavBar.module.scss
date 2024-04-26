@@ -6,8 +6,29 @@
   padding: 10px;
   display: flex;
   align-items: center;
+
   a {
     margin-right: 5px;
     color: var(--primary-color)
   }
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-right: 10px;
+  img {
+    height: 100%;
+  }
+
+  p {
+    margin-left: 5px;
+    align-self:  center;
+  }
+}
+
+.themeSwitcher {
+  margin-left: auto;
 }

@@ -1,0 +1,10 @@
+.button {
+  height: 80%;
+  width: 150px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: var(--primary-bg-color);
+  outline: none;
+  border: 2px var(--bg-color) solid;
+  border-radius: 20px;
+}
