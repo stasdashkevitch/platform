@@ -34,7 +34,6 @@ export function buildLoaders(option: BuildOptions): RuleSetRule[] {
         options: {
           modules: {
             auto: (resPath: string) => Boolean(resPath.includes('.module.')),
-            exportGlobals: true,
             localIdentName: option.isDev ? '[path][name]__[local]--[hash:base64:8]' : '[hash:base64:8]',
             namedExport: false,
           },
