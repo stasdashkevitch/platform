@@ -1,22 +1,22 @@
-import { classNames } from "shared/lib/classNames"
-import { Link, LinkProps } from "react-router-dom"
-import { FC } from "react";
+import {classNames} from 'shared/lib/classNames';
+import {Link, type LinkProps} from 'react-router-dom';
+import {type FC} from 'react';
 
-interface AppLinkProps extends LinkProps {
-  className?: string;
-}
+type AppLinkProps = {
+	className?: string;
+} & LinkProps;
 
 export const AppLink: FC<AppLinkProps> = (props: AppLinkProps) => {
-  const { to, className, children, ...others } = props
+	const {to, className, children, ...others} = props;
 
-  return (
-    <Link
-      to={to}
-      className={classNames(className)}
-      {...others}
-    >
-      {children}
-    </Link>
-  )
-}
+	return (
+		<Link
+			to={to}
+			className={classNames(className)}
+			{...others}
+		>
+			{children}
+		</Link>
+	);
+};
 
