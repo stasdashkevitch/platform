@@ -17,7 +17,7 @@ export const NotFoundPage = ({ ClassName }: NotFoundPageProps) => {
   return (
     <div className={classNames(style.wrapper)}>
       <img className={style.img} src={theme === Theme.LIGHT ? img404 : dark404} alt="not founded" />
-      <p>{t("Страница не найдена")}, <Link to='/'>{t("перейти на главную?")}</Link></p>
+      <p>{t("Страница не найдена")}, <Link to='/'>{t("перейти на главную")}?</Link></p>
     </div>
   )
 }
