@@ -43,5 +43,38 @@
   }
 }
 
+.cross {
+  width: 15px;
+  height: 15px;
+  transform: scale(2);
+  position: relative;
+  display: block;
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.cross::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 7px;
+  background: #000000;
+  transform: rotate(45deg);
+}
+
+.cross::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 7px;
+  background: #000000;
+  transform: rotate(135deg);
+}
+
+
 
 

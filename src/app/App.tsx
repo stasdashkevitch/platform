@@ -3,19 +3,13 @@ import './styles/index.scss';
 import { AppRouter } from 'app/providers/router';
 import { NavBar } from 'widgets/NavBar';
 import { SideBar } from 'widgets/SideBar';
-import { Modal } from 'shared/ui/Modal/Modal';
-import { useState } from 'react';
 import { Counter } from 'entities/Counter';
 
 export const App = () => {
   const { theme } = useTheme();
-  const [isOpen, setIsOpen] = useState(false)
   return (
     <div className={`app ${theme}`}>
       <NavBar />
-      <Counter />
-      <button onClick={() => setIsOpen(!isOpen)}>toggle</button>
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(!isOpen)}>fefe</Modal>
       <div className="content-page">
         <SideBar />
         <AppRouter />

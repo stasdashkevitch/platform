@@ -1,0 +1,24 @@
+.loginForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  padding: 5px;
+}
+
+.input:focus {
+  border: 2px solid #999999;
+  outline: none;
+}
+
+
+
+.loginBtn {
+  margin-top: 15px;
+  margin-left: 0 auto;
+}
